@@ -339,51 +339,31 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pengertian" title="Pengertian" class="md-nav__link">
-    Pengertian
+  <a href="#apa-itu-crawling" title="Apa itu Crawling?" class="md-nav__link">
+    Apa itu Crawling?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#tahapan" title="Tahapan" class="md-nav__link">
-    Tahapan
+  <a href="#langkah-langkah" title="Langkah - Langkah" class="md-nav__link">
+    Langkah - Langkah
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#crawl-link-header-seluruh-berita-pada-website" title="Crawl link header seluruh berita pada website" class="md-nav__link">
-    Crawl link header seluruh berita pada website
+  <a href="#mengcraw-link" title="MengCraw Link" class="md-nav__link">
+    MengCraw Link
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#tribunnews_urlpy" title="tribunnews_url.py" class="md-nav__link">
-    tribunnews_url.py
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#crawl-judul-dan-isi-berita-pada-setiap-link-header-berita" title="Crawl judul dan isi berita pada setiap link header berita" class="md-nav__link">
-    Crawl judul dan isi berita pada setiap link header berita
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tribunnews_kedbpy" title="tribunnews_kedb.py" class="md-nav__link">
-    tribunnews_kedb.py
+  <a href="#file-mainbasket_urlpy" title="File mainbasket_url.py" class="md-nav__link">
+    File mainbasket_url.py
   </a>
   
 </li>
@@ -490,51 +470,31 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pengertian" title="Pengertian" class="md-nav__link">
-    Pengertian
+  <a href="#apa-itu-crawling" title="Apa itu Crawling?" class="md-nav__link">
+    Apa itu Crawling?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#tahapan" title="Tahapan" class="md-nav__link">
-    Tahapan
+  <a href="#langkah-langkah" title="Langkah - Langkah" class="md-nav__link">
+    Langkah - Langkah
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#crawl-link-header-seluruh-berita-pada-website" title="Crawl link header seluruh berita pada website" class="md-nav__link">
-    Crawl link header seluruh berita pada website
+  <a href="#mengcraw-link" title="MengCraw Link" class="md-nav__link">
+    MengCraw Link
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#tribunnews_urlpy" title="tribunnews_url.py" class="md-nav__link">
-    tribunnews_url.py
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#crawl-judul-dan-isi-berita-pada-setiap-link-header-berita" title="Crawl judul dan isi berita pada setiap link header berita" class="md-nav__link">
-    Crawl judul dan isi berita pada setiap link header berita
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tribunnews_kedbpy" title="tribunnews_kedb.py" class="md-nav__link">
-    tribunnews_kedb.py
+  <a href="#file-mainbasket_urlpy" title="File mainbasket_url.py" class="md-nav__link">
+    File mainbasket_url.py
   </a>
   
 </li>
@@ -566,135 +526,97 @@
               
                 
                 
-                <h1 id="crawling">CRAWLING<a class="headerlink" href="#crawling" title="Permanent link">&para;</a></h1>
-<h2 id="pengertian">Pengertian<a class="headerlink" href="#pengertian" title="Permanent link">&para;</a></h2>
-<p>Web crawler merupakan sebuah program yang memiliki prinsip kerja rekursif atau bekerja secara otomatis mengambil dan mengumpulkan semua informasi yang ada dalam suatu website. Informasi yang diambil tersebut dapat berupa sebuah text, gambar, video, maupun audio<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
-<p>Prinsip kerja dari sebuah web crawler adalah akan mengunjungi setiap alamat website yang diberikan kepadanya, lalu program seakan-akan merayap pada website untuk melakukan filter tipe informasi yang akan diambil,  kemudian web crawl mengambil dan menyimpan semua informasi berdasarkan filter yang terkandung didalam website tersebut, berdasarkan kategori. Setiap kali web crawler mengunjungi sebuah website, maka dia juga akan mendata semua link yang ada dihalaman yang dikunjunginya itu untuk kemudian dikunjungi lagi satu persatu, hasil informasi yang telah diambil tersebut biasanya disimpan di dalam sebuah database<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>.</p>
-<p>Pada bahasa pemrograman python, proses crawl informasi pada sebuah website dapat dilakukan dengan menggunakan library Beautifulsoup4.</p>
-<h2 id="tahapan">Tahapan<a class="headerlink" href="#tahapan" title="Permanent link">&para;</a></h2>
-<h3 id="crawl-link-header-seluruh-berita-pada-website">Crawl link header seluruh berita pada website<a class="headerlink" href="#crawl-link-header-seluruh-berita-pada-website" title="Permanent link">&para;</a></h3>
-<p>Langkah pertama yang dilakukan penulis adalah melakukan crawl / mengambil untuk mengambil seluruh url / link dari setiap berita yang ada didalam satu page website, hasil  kumpulan link berita tersebut selanjutnya disimpan didalam file excel. </p>
-<h4 id="tribunnews_urlpy">tribunnews_url.py<a class="headerlink" href="#tribunnews_urlpy" title="Permanent link">&para;</a></h4>
-<p>File <strong>tribunnews_url.py</strong> digunakan untuk mengambil setiap link berita pada setiap page url header, lalu disimpan pada file excel, proses pertama ketika melakukan crawl pada sebuah website berita adalah melakukan crawl / pengambilan setiap link berita pada header berita, kumpulan link yang sudah terambil tersebut selanjutnya akan kita kunjungi satu persatu untuk melakukan proses crawl judul dan isi setiap berita pada masing-masing link berita tersebut.</p>
-<div class="codehilite"><pre><span></span>import xlsxwriter
+                <h1 id="crawling">Crawling<a class="headerlink" href="#crawling" title="Permanent link">&para;</a></h1>
+<h2 id="apa-itu-crawling">Apa itu Crawling?<a class="headerlink" href="#apa-itu-crawling" title="Permanent link">&para;</a></h2>
+<p>Crawlimg adalah aplikasi script program untuk melakukan scan kesemua halamandi  internet dan dibuatkan index untuk data yang di carinya. Nama lain untuk web adalah web spider, web robot, bot, crawl dan automatic indexer. Search  engine menggunakan web crawl untuk mengumpulkan informasi mengenai apa  yang ada di halaman-halaman web publik. Tujuan utamanya adalah  mengumpukan data sehingga ketika pengguna Internet mengetikkan kata  pencarian di komputernya, search engine dapat dengan segera menampilkan  web site yang relevan. Web crawl bisa  beroperasi hanya sekali, misalnya untuk suatu projek yang hanya sekali  jalan, atau jika tujuannya untuk jangka panjang seperti pada kasus  search engine, mereka bisa diprogram untuk menyisir Internet secara  periodik untuk menentukan apakah sudah berlangsung perubahan signifikan.  Jika suatu situs mengalami trafik sangat padat atau kesulitan teknis,  spider atau crawl dapat diprogram untuk mencatat hal ini dan  mengunjunginya kembali setelah kesulitan teknis itu terselesaikan.</p>
+<h2 id="langkah-langkah">Langkah - Langkah<a class="headerlink" href="#langkah-langkah" title="Permanent link">&para;</a></h2>
+<p>Ada beberapa langkah yang harus dilalui untuk melakukan crawling data, langkah pertama yaitu :</p>
+<h3 id="mengcraw-link">MengCraw Link<a class="headerlink" href="#mengcraw-link" title="Permanent link">&para;</a></h3>
+<p>Mengcraw link yang dimaksud disini adalah mengambil seluruh link yang ada didalam satu page website, lalu link berita tersebut selanjutnya disimpan dalam file berbentuk excel.</p>
+<h4 id="file-mainbasket_urlpy">File mainbasket_url.py<a class="headerlink" href="#file-mainbasket_urlpy" title="Permanent link">&para;</a></h4>
+<p>mainbasket_url.py berfungsi untuk mengambil link berita pada setiap page url header, proses pertama ketika melakukan crawling pada sebuah website berita adalah melakukan pengambilan setiap 
+link berita pada header berita.</p>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">xlsxwriter</span>
 
-workbook = xlsxwriter.Workbook(&#39;tribunnews_daftarlinkberita.xlsx&#39;)
-worksheet1 = workbook.add_worksheet()
-kumpulan_link=[]
+<span class="n">workbook</span> <span class="o">=</span> <span class="n">xlsxwriter</span><span class="o">.</span><span class="n">Workbook</span><span class="p">(</span><span class="s1">&#39;mainbasket_daftarlinkberita.xlsx&#39;</span><span class="p">)</span>
+<span class="n">worksheet1</span> <span class="o">=</span> <span class="n">workbook</span><span class="o">.</span><span class="n">add_worksheet</span><span class="p">()</span>
+<span class="n">kumpulan_link</span><span class="o">=</span><span class="p">[]</span>
 </pre></div>
 
-<p>Code diatas digunakan untuk membuat file excel baru yang bernama '<em>tribunnews_daftarlinkberita.xlsx'</em> yang digunakan untuk menyimpan setiap url link berita pada setiap page berita.</p>
-<div class="codehilite"><pre><span></span>def cari_link(page):
-    import urllib as link
-    from bs4 import BeautifulSoup
-    import re
-    print (page)
-    html_page = link.urlopen(&quot;http://surabaya.tribunnews.com/topic/berita-gresik?&amp;page=&quot;+str(page)).read()
-    soup = BeautifulSoup(html_page, &quot;lxml&quot;)def cari_link(page):
-    import urllib as link
-    from bs4 import BeautifulSoup
-    import re
-    print (page)
-    html_page = link.urlopen(&quot;http://surabaya.tribunnews.com/topic/berita-gresik?&amp;page=&quot;+str(page)).read()
-    soup = BeautifulSoup(html_page, &quot;lxml&quot;)
+<p>code tersebut berfungsi untuk membuat file excel yang nantinya file excel tersebut akan menyimpan semua link yang telah di crawling.</p>
+<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">cari_link</span><span class="p">(</span><span class="n">page</span><span class="p">):</span>
+    <span class="kn">import</span> <span class="nn">urllib</span> <span class="kn">as</span> <span class="nn">link</span>
+    <span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+    <span class="kn">import</span> <span class="nn">re</span>
+    <span class="k">print</span> <span class="p">(</span><span class="n">page</span><span class="p">)</span>
+    <span class="n">html_page</span> <span class="o">=</span> <span class="n">link</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="s2">&quot;https://www.mainbasket.com/c/4/berita/ablpage=&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">page</span><span class="p">))</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">html_page</span><span class="p">,</span> <span class="s2">&quot;html.parser&quot;</span><span class="p">)</span>
 </pre></div>
 
-<p>Code diatas merupakan proses crawling menggunakan library beautifulsoup4 untuk kemudian dikonversi ke dalam tag <em>lxml(html)</em> agar memudahkan kita dalam melakukan filter data yang akan diambil ketika proses crawling, pada website <em><a href="http://surabaya.tribunnews.com/topic/berita-gresik?&amp;page=&quot;+str(page">http://surabaya.tribunnews.com/topic/berita-gresik?&amp;page="+str(page</a>)</em>.</p>
-<blockquote>
-<p>*perlu diketahui bahwa <strong>"str(page)"</strong> merupakan sebuah value dimana program akan melakukan crawling sebanyak nilai dari variabel page yang diinputkan oleh user.  </p>
-</blockquote>
-<div class="codehilite"><pre><span></span> for a in soup.findAll(&#39;h3&#39;, &#39;f20 ln24 fbo&#39;):
-        for link in a.findAll(&#39;a&#39;, attrs={&#39;href&#39;: re.compile(&quot;^http://&quot;)}):
-            #print link.get(&#39;href&#39;)
-            kumpulan_link.append(link.get(&#39;href&#39;))
+<p>Code tersebut merupakan proses crawling yang kemudian dikonversi ke dalam tag lxml(html) , pada website <a href="https://www.mainbasket.com/c/4/berita/ablpage=&quot;+str(page">https://www.mainbasket.com/c/4/berita/ablpage="+str(page</a>) , proses crawling tersebut menggunakan library beautifulsoup4</p>
+<div class="codehilite"><pre><span></span> <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">soup</span><span class="o">.</span><span class="n">findAll</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span> <span class="s1">&#39;post-title&#39;</span><span class="p">):</span>
+        <span class="c1">#print a</span>
+        <span class="k">for</span> <span class="n">link</span> <span class="ow">in</span> <span class="n">a</span><span class="o">.</span><span class="n">findAll</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;href&#39;</span><span class="p">:</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">&quot;^https://&quot;</span><span class="p">)}):</span>
+            <span class="k">print</span> <span class="n">link</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;href&#39;</span><span class="p">)</span>
+            <span class="n">kumpulan_link</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">link</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;href&#39;</span><span class="p">))</span>
 </pre></div>
 
-<p>Code diatas digunakan untuk mengambil value data (url/link) berita pada tag html yang mengandung attribut "<em>href</em>" pada setiap page halaman website, dimana attribut "<em>href</em>" tersebut terletak di dalam tag <em>"h3"</em>  dengan id class "<em>f20 ln24 fbo</em>".</p>
-<blockquote>
-<p>*Perlu diketahui bahwa setiap website berbeda kasus tag filter htmlnya, oleh karena itu diperlukan metode inspect element pada web browser untuk mengatahui tata letak attribut attribut "href".</p>
-<p><em>soup.findAll('h3', 'f20 ln24 fbo') digunakan untuk mendapatkan / mengambil seluruh objek yang terdapat pada tag html *h3</em> dengan class <em>'f20 ln24 fbo'</em></p>
-</blockquote>
-<div class="codehilite"><pre><span></span>for i in range(1,6):
-    cari_link(str(i))
-print len(kumpulan_link)
+<p>Code diatas digunakan untuk mengambil value data url berita pada tag html yang mengandung attribut "href" pada setiap page halaman website, dimana attribut "href" tersebut terletak di dalam tag "a" dengan class "post-title".</p>
+<h1 id="nb-untuk-mendapatkan-tag-filter-html-diperlukan-melakukan-inspect-element-pada-web-browser-untuk-mengatahui-tata-letak-attribut-tag-dan-class-nya">NB untuk mendapatkan tag filter html,  diperlukan melakukan inspect element pada web browser untuk mengatahui tata letak attribut tag dan class nya.<a class="headerlink" href="#nb-untuk-mendapatkan-tag-filter-html-diperlukan-melakukan-inspect-element-pada-web-browser-untuk-mengatahui-tata-letak-attribut-tag-dan-class-nya" title="Permanent link">&para;</a></h1>
+<div class="codehilite"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">6</span><span class="p">):</span>
+    <span class="n">cari_link</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+<span class="k">print</span> <span class="nb">len</span><span class="p">(</span><span class="n">kumpulan_link</span><span class="p">)</span>
 
-for baris in range(len(kumpulan_link)):
-    print (baris)
-    print (kumpulan_link[baris])
-    worksheet1.write(baris,1, str(kumpulan_link[baris]))
-workbook.close()
+<span class="k">for</span> <span class="n">baris</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">kumpulan_link</span><span class="p">)):</span>
+    <span class="k">print</span> <span class="p">(</span><span class="n">baris</span><span class="p">)</span>
+    <span class="k">print</span> <span class="p">(</span><span class="n">kumpulan_link</span><span class="p">[</span><span class="n">baris</span><span class="p">])</span>
+    <span class="n">worksheet1</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">baris</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">kumpulan_link</span><span class="p">[</span><span class="n">baris</span><span class="p">]))</span>
+<span class="n">workbook</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 
-<p>Code diatas digunakan untuk menjalankan fungsi crawling data sebanyak 5 (1-5) page website. dimana setiap page akan diambil 30 value (url/link) berita lalu akan di simpan ke dalam file excel sebelumnya.</p>
-<p>total data yang diambil adalah 150 dokumen dengan rincian <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/page" title="GitHub User: page">@page</a> terdapat 30 berita.</p>
-<blockquote>
-<p>*ketika file selesai di running maka akan terbentuk file excel baru dengan nama <em>'tribunnews_daftarlinkberita.xlsx'</em></p>
-<p>*output file <em>'tribunnews_daftarlinkberita.xlsx'</em></p>
-<p><a href="../assets/images/Screenshot%20from%202019-04-30%2009-29-22.png"><img alt="Material for MkDocs" src="../assets/images/Screenshot%20from%202019-04-30%2009-29-22.png" /></a></p>
-</blockquote>
-<h3 id="crawl-judul-dan-isi-berita-pada-setiap-link-header-berita">Crawl judul dan isi berita pada setiap link header berita<a class="headerlink" href="#crawl-judul-dan-isi-berita-pada-setiap-link-header-berita" title="Permanent link">&para;</a></h3>
-<p>Langkah selanjutnya yang dilakukan oleh penulis yaitu mengunjungi secara bergantian (looping) seluruh link header berita tadi, untuk selanjutnya mengambil informasi (berupa text) judul dan isi berita dari setiap link header berita. </p>
-<h4 id="tribunnews_kedbpy">tribunnews_kedb.py<a class="headerlink" href="#tribunnews_kedbpy" title="Permanent link">&para;</a></h4>
-<p>File <strong>tribunnews_kedb.py</strong> digunakan untuk melakukan crawling text (judul dan isi) berita pada setiap link yang ada di file excel sebelumnya, lalu menyimpannya pada database.</p>
-<div class="codehilite"><pre><span></span>for baris in range(data.nrows):
-    print (&quot;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&quot;+str(baris))
+<p>Code tersebut untuk menjalankan crawling data,dimana di setiap page terdapat 7 link atau berita, disini saya batasi sampai 5 page saja. jadi total keseluruhan link yang saya ambil sebanyak 35 link atau berita, kemudian hasil crawling tersebut terciptaah sebuah file excel baru yang berisi isi list data link seperti gambar berikut.</p>
+<p><img alt="1556716231164" src="C:\Users\Hilmi\AppData\Roaming\Typora\typora-user-images\1556716231164.png" /></p>
+<h3 id="craw-judul-dan-isi-berita">Craw Judul dan Isi Berita<a class="headerlink" href="#craw-judul-dan-isi-berita" title="Permanent link">&para;</a></h3>
+<p>Proses yang harus dilakukan se;anjutnya yaitu mengambil data berupa text judul dan isi berita dari setiap link berita. </p>
+<h4 id="file-mainbasket_kedbpy">File mainbasket_kedb.py<a class="headerlink" href="#file-mainbasket_kedbpy" title="Permanent link">&para;</a></h4>
+<p>File ini digunakan untuk melakukan crawling text judul dan isi berita pada setiap link di file excel link berita , lalu menyimpannya pada database.</p>
+<div class="codehilite"><pre><span></span><span class="k">for</span> <span class="n">baris</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">nrows</span><span class="p">):</span>
+    <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">baris</span><span class="p">))</span>
 
-    from bs4 import BeautifulSoup
+    <span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
 
-    value_data = data.cell_value(rowx=baris, colx=1)
-    print (value_data)
-    html = link.urlopen(str(value_data)).read()
-    soup = BeautifulSoup(html, &quot;lxml&quot;)
-    for baris in range(data.nrows):
-    print (&quot;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&quot;+str(baris))
-
-    from bs4 import BeautifulSoup
-    value_data = data.cell_value(rowx=baris, colx=1)
-    print (value_data)
-    html = link.urlopen(str(value_data)).read()
+    <span class="n">value_data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">cell_value</span><span class="p">(</span><span class="n">rowx</span><span class="o">=</span><span class="n">baris</span><span class="p">,</span> <span class="n">colx</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">print</span> <span class="p">(</span><span class="n">value_data</span><span class="p">)</span>
+    <span class="n">html</span> <span class="o">=</span> <span class="n">link</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">value_data</span><span class="p">))</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">html</span><span class="p">,</span> <span class="s2">&quot;html.parser&quot;</span><span class="p">)</span>
 </pre></div>
 
-<p>Code diatas digunakan untuk mengunjungi setiap link header berita yang tersimpan pada file excel sebelumnya secara berurutan / looping, untuk selanjutnya dilakukan proses crawl judul dan isi berita dari masing-masing link header berita.</p>
-<div class="codehilite"><pre><span></span>    soup = BeautifulSoup(html, &quot;lxml&quot;)
-    berita = soup.find(&#39;h1&#39;, &#39;f50 black2 f400 crimson&#39;).get_text()
-    berita = berita.strip()
-    print(berita)
-
-    isi = soup.find(&#39;div&#39;, &#39;side-article txt-article&#39;).get_text()
-    isi=isi.replace(&#39;var unruly = window.unruly || {};unruly.native = unruly.native || {};unruly.native.siteId = 1082418;&#39;, &#39;&#39;).replace(&#39;\t\t&#39;, &#39;&#39;).replace(&#39;,&#39;, &#39;&#39;).replace(&#39;googletag.cmd.push(function() { googletag.display(&quot;div-Inside-MediumRectangle&quot;); });&#39;,&#39;&#39;)
-    isi=isi.replace(&quot;googletag.cmd.push(function() { googletag.display(&#39;div-Inside-MediumRectangle&#39;); });&quot;,&#39;&#39;)
-    isi=isi.replace(&quot;\n&quot;,&#39;&#39;)
-    isi= isi[22:]
-    isi=isi.strip()
- berita = soup.find(&#39;h1&#39;, &#39;f50 black2 f400 crimson&#39;).get_text()
-    berita = berita.strip()
-    print(berita)
-    isi = soup.find(&#39;div&#39;, &#39;side-article txt-article&#39;).get_text()
-    isi=isi.replace(&#39;var unruly = window.unruly || {};unruly.native = unruly.native || {};unruly.native.siteId = 1082418;&#39;, &#39;&#39;).replace(&#39;\t\t&#39;, &#39;&#39;).replace(&#39;,&#39;, &#39;&#39;).replace(&#39;googletag.cmd.push(function() { googletag.display(&quot;div-Inside-MediumRectangle&quot;); });&#39;,&#39;&#39;)
-    isi=isi.replace(&quot;googletag.cmd.push(function() { googletag.display(&#39;div-Inside-MediumRectangle&#39;); });&quot;,&#39;&#39;)
-    isi=isi.replace(&quot;\n&quot;,&#39;&#39;)
-    isi= isi[22:]
-    isi=isi.strip()
+<p>Code diatas digunakan untuk mengunjungi setiap link header berita yang tersimpan pada file excel, untuk selanjutnya dilakukan proses crawl data text judul dan isi berita dari masing-masing link berita yang sudah ada.</p>
+<div class="codehilite"><pre><span></span><span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">html</span><span class="p">,</span> <span class="s2">&quot;html.parser&quot;</span><span class="p">)</span>
+    <span class="n">berita</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span> <span class="s1">&#39;headline-title&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span>
+    <span class="n">berita</span> <span class="o">=</span> <span class="n">berita</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">berita</span><span class="p">)</span>
+    <span class="n">isi</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span> <span class="s1">&#39;post-body&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span>
+    <span class="n">isi</span><span class="o">=</span><span class="n">isi</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;var unruly = window.unruly || {};unruly.native = unruly.native |{};unruly.native.siteId = 1082418;&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t\t</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;googletag.cmd.push(function() { googletag.display(&quot;div-Inside-MediumRectangle&quot;); });&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+    <span class="n">isi</span><span class="o">=</span><span class="n">isi</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;googletag.cmd.push(function() { googletag.display(&#39;div-Inside-MediumRectangle&#39;); });&quot;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+    <span class="n">isi</span><span class="o">=</span><span class="n">isi</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+    <span class="n">isi</span><span class="o">=</span> <span class="n">isi</span><span class="p">[</span><span class="mi">22</span><span class="p">:]</span>
+    <span class="n">isi</span><span class="o">=</span><span class="n">isi</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
 </pre></div>
 
-<p>Code diatas digunakan untuk melakukan crawling data judul dan isi berita pada setiap url/link berita dimana untuk melakukan <strong>pengambilan judul</strong> dilakukan filter pada tag html  <em>('h1', 'f50 black2 f400 crimson')</em>, dan <strong>mengambil isi berita</strong> pada tag html <em>('div', 'side-article txt-article')</em> pada masing-masing link url header yang telah di ambil sebelumnya.</p>
-<blockquote>
-<p>*soup.find('h3', 'f20 ln24 fbo') digunakan untuk mendapatkan / mengambil satu objek yang terdapat pada tag html *div*dengan class <em>'side-article txt-article'</em></p>
-<p>*ketika file selesai di running maka akan terbentuk file excel baru dengan nama <em>'tribunnews_daftarjuduldanisiberita.xlsx'</em></p>
-<p>*output file <em>'tribunnews_daftarjuduldanisiberita.xlsx</em></p>
-<p><a href="../assets/images/Screenshot%20from%202019-04-30%2011-16-19.png"><img alt="Material for MkDocs" src="../assets/images/Screenshot%20from%202019-04-30%2011-16-19.png" /></a></p>
-</blockquote>
-<div class="footnote">
-<hr />
-<ol>
-<li id="fn:1">
-<p><a href="http://www.teknologi-bigdata.com/2016/07/web-crawling-di-era-big-data.html">http://www.teknologi-bigdata.com/2016/07/web-crawling-di-era-big-data.html</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p>Code tersebut berfungsi untuk melakukan crawling data text judul dan isi berita pada setiap link berita,
+untuk melakukan pengambilan judul dilakukan pada tag html ('div', 'headline-title'), dan isi berita pada tag html ('div', 'post-body') pada masing-masing link yang telah di ambil sebelumnya.</p>
+<p>Berikut hasil output nya pada file excel </p>
+<p><img alt="isi berita" src="C:\Users\Hilmi\Desktop\Tugas\isi berita.PNG" /></p>
+<p>Refrensi :</p>
+<ul>
+<li>
+<p><a href="https://www.kompasiana.com/jalaludin.ax/54f67c7fa333112b758b4ebf/membuat-web-crawling">https://www.kompasiana.com/jalaludin.ax/54f67c7fa333112b758b4ebf/membuat-web-crawling</a></p>
 </li>
-<li id="fn:2">
-<p><a href="http://prowebscraping.com/web-scraping-vs-web-crawling/">http://prowebscraping.com/web-scraping-vs-web-crawling/</a>&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+<li>
+<p><a href="http://prowebscraping.com/web-scraping-vs-web-crawling/">http://prowebscraping.com/web-scraping-vs-web-crawling/</a></p>
 </li>
-</ol>
-</div>
+</ul>
                 
                   
                 

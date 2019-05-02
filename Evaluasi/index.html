@@ -399,44 +399,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#perankingan-fitur" title="Perankingan Fitur" class="md-nav__link">
-    Perankingan Fitur
+  <a href="#hasil" title="Hasil" class="md-nav__link">
+    Hasil
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#seleksi-fitur-random-forest-dengan-k-mean" title="Seleksi Fitur Random Forest dengan K-mean" class="md-nav__link">
+    Seleksi Fitur Random Forest dengan K-mean
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#tanpa-seleksi-fitur" title="Tanpa Seleksi Fitur" class="md-nav__link">
-    Tanpa Seleksi Fitur
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#seleksi-fitur-random-forest-k-mean" title="Seleksi Fitur Random Forest + K-mean" class="md-nav__link">
-    Seleksi Fitur Random Forest + K-mean
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#seleksi-fitur-chi-square-k-mean" title="Seleksi Fitur Chi Square + K-mean" class="md-nav__link">
-    Seleksi Fitur Chi Square + K-mean
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#menggunakan-pca-k-mean" title="Menggunakan PCA + K-mean" class="md-nav__link">
-    Menggunakan PCA + K-mean
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#kesimpulan" title="Kesimpulan" class="md-nav__link">
-    Kesimpulan
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -472,44 +450,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#perankingan-fitur" title="Perankingan Fitur" class="md-nav__link">
-    Perankingan Fitur
+  <a href="#hasil" title="Hasil" class="md-nav__link">
+    Hasil
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#seleksi-fitur-random-forest-dengan-k-mean" title="Seleksi Fitur Random Forest dengan K-mean" class="md-nav__link">
+    Seleksi Fitur Random Forest dengan K-mean
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#tanpa-seleksi-fitur" title="Tanpa Seleksi Fitur" class="md-nav__link">
-    Tanpa Seleksi Fitur
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#seleksi-fitur-random-forest-k-mean" title="Seleksi Fitur Random Forest + K-mean" class="md-nav__link">
-    Seleksi Fitur Random Forest + K-mean
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#seleksi-fitur-chi-square-k-mean" title="Seleksi Fitur Chi Square + K-mean" class="md-nav__link">
-    Seleksi Fitur Chi Square + K-mean
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#menggunakan-pca-k-mean" title="Menggunakan PCA + K-mean" class="md-nav__link">
-    Menggunakan PCA + K-mean
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#kesimpulan" title="Kesimpulan" class="md-nav__link">
-    Kesimpulan
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -531,43 +487,10 @@
                 
                 
                 <h1 id="evaluasi">Evaluasi<a class="headerlink" href="#evaluasi" title="Permanent link">&para;</a></h1>
-<p>Dalam kasus ini data yang digunakan oleh penulis berasal dari website  <em>"<a href="http://surabaya.tribunnews.com/topic/berita-gresik?&amp;page=">http://surabaya.tribunnews.com/topic/berita-gresik?&amp;page=</a>?"</em> sebanyak 5 page dengan rincian setiap 1 page menampung 30 berita, jadi total dokumen / berita yang di crawling adalah 150 dokumen, yang terdiri dari judul dan isi berita.</p>
-<h2 id="perankingan-fitur">Perankingan Fitur<a class="headerlink" href="#perankingan-fitur" title="Permanent link">&para;</a></h2>
-<p>Pada percobaan ini, penulis hanya melihat nilai score pada seluruh fitur / kata yang terdapat pada data  menggunakan metode model based ranking "Random Forest", hasil nilai dari setiap fitur nantinya akan digunakan untuk melakukan perankingan terhadap fitur mana saja yang memiliki score yang paling tinggi. Hasil perankingan tersebut digunakan menjadi acuan saat pemilihan jumlah fitur yang digunakan.</p>
-<blockquote>
-<p>*hasil output</p>
-<p><a href="../assets/images/ranking.png"><img alt="Material for MkDocs" src="../assets/images/ranking.png" /></a></p>
-</blockquote>
-<h2 id="tanpa-seleksi-fitur">Tanpa Seleksi Fitur<a class="headerlink" href="#tanpa-seleksi-fitur" title="Permanent link">&para;</a></h2>
-<p>Pada percobaan ini, penulis tidak melakukan seleksi fitur apapun, jadi total copus sekitar 2000 kata. Penulis langsung melakukan clustering dengan menggunakan metode K-mean, proses ini diawali dengan melakukan clustering mengunakan jumlah cluster antara range 2 sampai n_data-1 (2 sampai 149) secara looping serta menghitung nilai silhoutte setiap range cluster. Proses ini  bertujuan untuk <strong>mencari berapa jumlah cluster yang memiliki nilai silhoutte terbaik</strong>.</p>
-<table>
-<thead>
-<tr>
-<th>Percobaan</th>
-<th>Silhoute Terbaik</th>
-<th>n_Cluster</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ke 1</td>
-<td>0.099</td>
-<td>4</td>
-</tr>
-<tr>
-<td>ke 2</td>
-<td>0.113</td>
-<td>8</td>
-</tr>
-<tr>
-<td>ke 3</td>
-<td>0.086</td>
-<td>10</td>
-</tr>
-</tbody>
-</table>
-<h2 id="seleksi-fitur-random-forest-k-mean">Seleksi Fitur Random Forest + K-mean<a class="headerlink" href="#seleksi-fitur-random-forest-k-mean" title="Permanent link">&para;</a></h2>
-<p>Pada percobaan ini, penulis menngunakan seleksi fitur random forest namun dengan <strong>nilai n_estimator yang berbeda</strong>. Perlu diketahui bahwa n_estimator menunjukkan banyaknya pohon keputusan yang terdapat pada random forest,  menurut penulis <em>semakin banyak nilai n_estimator maka proses komputasi menjadi semakin lama namun menghasilkan nilai yang bagus</em>.</p>
+<p>Dalam kasus ini data yang digunakan oleh penulis berasal dari website  "<a href="https://www.mainbasket.com/c/4/berita/abl">https://www.mainbasket.com/c/4/berita/abl</a>" dengan page sebanyak 5 page yang dimana setiap page terdapat 7 berita, total keseluruhan ada 35 data , yang terdiri dari judul serta isi berita.</p>
+<h2 id="hasil">Hasil<a class="headerlink" href="#hasil" title="Permanent link">&para;</a></h2>
+<h3 id="seleksi-fitur-random-forest-dengan-k-mean">Seleksi Fitur Random Forest dengan K-mean<a class="headerlink" href="#seleksi-fitur-random-forest-dengan-k-mean" title="Permanent link">&para;</a></h3>
+<p>Pada percobaan ini, penulis menngunakan seleksi fitur random forest namun dengan nilai n yang berbeda. Perlu diketahui bahwa n menunjukkan banyaknya pohon keputusan yang terdapat pada random forest.</p>
 <table>
 <thead>
 <tr>
@@ -581,40 +504,38 @@
 <tbody>
 <tr>
 <td>ke 1</td>
-<td>50</td>
-<td>20</td>
-<td>0.671</td>
-<td>7</td>
+<td>5</td>
+<td>100</td>
+<td>0.5403243593327233</td>
+<td>2</td>
 </tr>
 <tr>
 <td>ke 2</td>
+<td>5</td>
 <td>50</td>
-<td>100</td>
-<td>0.612</td>
-<td>8</td>
+<td>0.2160825606285164</td>
+<td>5</td>
 </tr>
 <tr>
 <td>ke 3</td>
-<td>5</td>
-<td>20</td>
-<td>0.478</td>
-<td>6</td>
+<td>50</td>
+<td>100</td>
+<td>0.516949295993263</td>
+<td>2</td>
 </tr>
 <tr>
 <td>ke 4</td>
-<td>5</td>
-<td>100</td>
-<td>0.420</td>
-<td>10</td>
+<td>50</td>
+<td>50</td>
+<td>0.24651372752710796</td>
+<td>3</td>
 </tr>
 </tbody>
 </table>
-<blockquote>
-<p>*percobaan terbaik</p>
-<p><a href="../assets/images/rf1.png"><img alt="Material for MkDocs" src="../assets/images/rf1.png" /></a></p>
-</blockquote>
-<h2 id="seleksi-fitur-chi-square-k-mean">Seleksi Fitur Chi Square + K-mean<a class="headerlink" href="#seleksi-fitur-chi-square-k-mean" title="Permanent link">&para;</a></h2>
-<p>Pada percobaan ini, penulis menngunakan seleksi fitur chi square namun dengan <strong>menggunakan banyak fitur yang digunakan secara berbeda</strong>. </p>
+<h1 id="hasil-percobaan-terbaik">Hasil Percobaan Terbaik<a class="headerlink" href="#hasil-percobaan-terbaik" title="Permanent link">&para;</a></h1>
+<p><img alt="terbaik" src="C:\Users\Hilmi\Desktop\Tugas\terbaik.PNG" /></p>
+<h3 id="seleksi-fitur-chi-square-dengan-k-mean">Seleksi Fitur Chi Square dengan K-mean<a class="headerlink" href="#seleksi-fitur-chi-square-dengan-k-mean" title="Permanent link">&para;</a></h3>
+<p>Pada percobaan ini, penulis menngunakan seleksi fitur chi square namun dengan menggunakan banyak fitur yang digunakan secara berbeda. </p>
 <table>
 <thead>
 <tr>
@@ -627,68 +548,28 @@
 <tbody>
 <tr>
 <td>ke 1</td>
-<td>20</td>
-<td>0.588</td>
-<td>7</td>
+<td>35</td>
+<td>0.6134604631137835</td>
+<td>2</td>
 </tr>
 <tr>
 <td>ke 2</td>
 <td>100</td>
-<td>0.429</td>
-<td>5</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>*percobaan ke 1</p>
-<p><a href="../assets/images/chi1.png"><img alt="Material for MkDocs" src="../assets/images/chi1.png" /></a></p>
-<p>*percobaan ke 2</p>
-<p><a href="../assets/images/chi2.png"><img alt="Material for MkDocs" src="../assets/images/chi2.png" /></a></p>
-</blockquote>
-<h2 id="menggunakan-pca-k-mean">Menggunakan PCA + K-mean<a class="headerlink" href="#menggunakan-pca-k-mean" title="Permanent link">&para;</a></h2>
-<p>Pada percobaan ini, penulis menyederhanakan seluruh corpus menjadi n_PCA, proses ini diawali dengan melakukan clustering mengunakan jumlah PCA antara range 3 sampai n_data-1 (3 sampai 149) secara looping serta menghitung nilai silhoutte setiap range cluster. Proses ini  bertujuan untuk <strong>mencari berapa jumlah cluster dan jumlah PCA yang tepat yang memiliki nilai silhoutte terbaik</strong>.</p>
-<table>
-<thead>
-<tr>
-<th>Percobaan</th>
-<th>n_PCA</th>
-<th>Silhoutte terbaik</th>
-<th>Banyak Cluster</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ke 1</td>
-<td>3</td>
-<td>0.545</td>
-<td>4</td>
-</tr>
-<tr>
-<td>ke 2</td>
-<td>4</td>
-<td>0.460</td>
+<td>0.5327485060311361</td>
 <td>2</td>
 </tr>
-<tr>
-<td>ke 3</td>
-<td>5</td>
-<td>0.423</td>
-<td>9</td>
-</tr>
-<tr>
-<td>ke 4</td>
-<td>6</td>
-<td>0.413</td>
-<td>12</td>
-</tr>
 </tbody>
 </table>
-<blockquote>
-<p>*output</p>
-<p><a href="../assets/images/pca.png"><img alt="Material for MkDocs" src="../assets/images/pca.png" /></a></p>
-</blockquote>
+<ul>
+<li>Hasil Percobaan ke 1</li>
+</ul>
+<p><img alt="percobaan 1" src="C:\Users\Hilmi\Desktop\Tugas\percobaan 1.PNG" /></p>
+<ul>
+<li>Hasil Percobaan ke 2</li>
+</ul>
+<p><img alt="percobaan 2" src="C:\Users\Hilmi\Desktop\Tugas\percobaan 2.PNG" /></p>
 <h2 id="kesimpulan">Kesimpulan<a class="headerlink" href="#kesimpulan" title="Permanent link">&para;</a></h2>
-<p>Dari beberapa percobaan diatas, dapat menyimpulkan bahwa metode clustering K-mean dengan seleksi fitur "Random Forest" menggunakan jumlah fitur sebanyak 20 fitur serta menggunkan n_estimator=50 adalah metode terbaik sejauh ini menurut penulis.</p>
+<p>Dari beberapa percobaan diatas, dapat menyimpulkan bahwa metode clustering K-mean dengan seleksi fitur "Random Forest" menggunakan jumlah fitur sebanyak 100 fitur serta menggunkan n_estimator=5 adalah metode terbaik sejauh ini.</p>
                 
                   
                 
